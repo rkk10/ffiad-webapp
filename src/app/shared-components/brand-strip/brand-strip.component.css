@@ -1,0 +1,60 @@
+:host{
+  display: block;
+}
+
+.brand{
+    height: 50px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+.brand-logo{
+    height: 40px;
+    width: 40px;
+    background-image: url('../../../assets/logos/ffiad_logo_75px.png');
+    background-position: center;
+    background-size: contain;
+}
+.brand-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+.brand-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+.sub-title{
+    font-size: 12px;
+}
+.phone,.email,.header-socials{
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact{
+  display: flex;
+}
+.email-logo,.phone-logo,.socials{
+  height: 22px;
+  width: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px 5px;
+}
+
+p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #9B111E;
+  margin: 0;
+}
+svg{
+  fill: #9B111E;
+}

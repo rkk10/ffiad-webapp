@@ -1,0 +1,27 @@
+:host{
+  display: block;
+  /* width: 275px; */
+}
+
+aside{
+    height: 100%;
+    width: 275px;
+    background-color: #0d47a1;
+    position: fixed;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+    z-index: 0;
+    padding-top: 100px;
+    padding: 0px;
+}
+
+.aside-close{
+  transform: translateX(-275px);
+}
+.side-link{
+  padding: 5px 0px;
+  background-color: #003990;
+  padding: 5px 15px;
+  margin: 2px 0px;
+  color: white;
+  font-size: 14px;
+}

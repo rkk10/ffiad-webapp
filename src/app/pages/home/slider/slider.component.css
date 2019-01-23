@@ -1,0 +1,9 @@
+.slider{
+  width: 100%;
+  height: calc(100vh - 95px);
+  background-color: #FFF2DF;
+  background-image: url('../../../../assets/event-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

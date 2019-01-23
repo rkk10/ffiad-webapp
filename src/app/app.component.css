@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+.app-root-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+app-ffiad-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.app-main-section{
+  height: 700px;
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+}
