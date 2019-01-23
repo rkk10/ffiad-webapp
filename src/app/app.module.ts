@@ -8,7 +8,7 @@ import { FooterComponent } from './shared-components/footer/footer.component';
 import { AsideComponent } from './shared-components/aside/aside.component';
 import { HomeModule} from './pages/home/home.module';
 import { BrandStripComponent } from './shared-components/brand-strip/brand-strip.component';
-import { from } from 'rxjs';
+import { SubscribeComponent } from './shared-components/subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { from } from 'rxjs';
     HeaderComponent,
     FooterComponent,
     AsideComponent,
-    BrandStripComponent
+    BrandStripComponent,
+    SubscribeComponent,
    ],
   imports: [
     BrowserModule,

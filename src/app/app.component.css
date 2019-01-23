@@ -15,7 +15,8 @@ app-ffiad-header {
   z-index: 20;
 }
 .app-main-section{
-  height: 700px;
+  height: auto;
+  min-height: 400px;
   padding-top: 85px;
   display: flex;
   flex-direction: column;
