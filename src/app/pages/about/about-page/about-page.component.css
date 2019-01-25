@@ -52,3 +52,39 @@ p.about-text{
   border-bottom: 2px solid lightgray;
   padding: 20px 0;
 }
+.member-card{
+  height: 300px;
+  width: 225px;
+  /* border: 1px solid lightcoral; */
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+  margin: 10px;
+}
+.member-pic{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.member-photo{
+  height: 140px;
+  width: 140px;
+  border: 1px solid lightcoral;
+  border-radius:  50%;
+  background-color: lightcoral;
+}
+.member-info{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
