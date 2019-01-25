@@ -1,0 +1,22 @@
+.about-container{
+  height: auto;
+  min-height: calc(100vh - 85px);
+  background-color: #9B111E;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+h1{
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 300;
+}
+p{
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}

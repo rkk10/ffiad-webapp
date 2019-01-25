@@ -18,6 +18,11 @@ const routes: Routes = [
     path: 'contact',
     pathMatch: 'full',
     loadChildren: './pages/contact/contact.module#ContactModule'
+  },
+  {
+    path: 'about',
+    pathMatch: 'full',
+    loadChildren: './pages/about/about.module#AboutModule'
   }
   // { path: 'home',
   //   loadChildren: './pages/home/home.module#HomeModule'
