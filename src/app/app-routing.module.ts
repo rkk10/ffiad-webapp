@@ -23,7 +23,13 @@ const routes: Routes = [
     path: 'about',
     pathMatch: 'full',
     loadChildren: './pages/about/about.module#AboutModule'
+  },
+  {
+    path: 'exim-services',
+    pathMatch: 'full',
+    loadChildren: './pages/exim-services/exim-services.module#EximServicesModule'
   }
+
   // { path: 'home',
   //   loadChildren: './pages/home/home.module#HomeModule'
   // }
