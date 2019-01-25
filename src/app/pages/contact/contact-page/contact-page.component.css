@@ -1,7 +1,126 @@
 .card{
   width: 100%;
   height: auto;
-  min-height: 500px;
-  border: 1px solid gray;
+  /* border: 1px solid 9b111e38; */
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #9B111E;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.3);
+  border: none;
+}
+.card-body{
+  height: 100%;
+  width: 100%;
+}
+.card-section{
+  height: 100%;
+  width: 50%;
+  /* background-color: #9B111E; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-weight: 300;
+}
+.contact{
+  background-color: white;
+}
+h5{
+  text-align:center;
+  color: #9B111E;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+}
+input,textarea{
+  margin: 10px 0;
+  height: 35px;
+  border-radius: 3px;
+  border: 2px solid;
+  border-color: #9b111e38;
+  text-indent: 10px;
+  color: gray;
+
+}
+::placeholder{
+  color: #9b111e38;
+}
+textarea{
+  height: 80px;
+}
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+button{
+  margin: 10px;
+  background: white;
+  border: 1px solid #9B111E;
+  color: #9B111E;
+}
+.email-add,.mobile,.phone,.address{
+  display: flex;
+  width: 400px;
+  margin: 10px 0;
+}
+
+.phone-logo,.mobile-logo,.add-logo,.email-logo{
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0px 20px;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+svg{
+  height: 25px;
+  width: 25px;
+  fill: white;
+}
+.map{
+  height: 400px;
+  width: 100%;
+  /* background: #9B111E; */
   margin: 50px 0;
 }
+.city-map{
+  height: 100%;
+  width: 100%;
+
+}
+.place{
+  height: 35px;
+  color: white;
+  background-color: #9B111E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registered, .corporate{
+  width: 50%;
+  height: calc(100% - 35px);
+  /* border: 2px solid #9B111E; */
+}
+.registered{
+  margin-left: 5px;
+}
+.corporate{
+  margin-right: 5px;
+}
+iframe{
+  height: 100%;
+  width: 100%;
+}
+
