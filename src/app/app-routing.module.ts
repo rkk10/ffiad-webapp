@@ -34,6 +34,11 @@ const routes: Routes = [
     pathMatch: 'full',
     loadChildren: './pages/career/career.module#CareerModule'
 
+  },
+  {
+    path: 'membership',
+    pathMatch: 'full',
+    loadChildren: './pages/membership/membership.module#MembershipModule'
   }
 
   // { path: 'home',
