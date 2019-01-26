@@ -17,7 +17,7 @@ import { SubscribeComponent } from './shared-components/subscribe/subscribe.comp
     FooterComponent,
     AsideComponent,
     BrandStripComponent,
-    SubscribeComponent,
+    SubscribeComponent
    ],
   imports: [
     BrowserModule,

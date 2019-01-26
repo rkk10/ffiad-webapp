@@ -1,0 +1,39 @@
+.career-form{
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px ;
+  width: 500px;
+  padding: 20px 10px;
+}
+
+input{
+  margin: 10px 0;
+  height: 35px;
+  text-indent: 10px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+input[type="file"]{
+  display: none;
+
+}
+label{
+  height: 35px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #9B111E;
+  border: 1px solid #9B111E;
+  border-radius: 3px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+button{
+  background-color: #9B111E;
+  margin: 10px;
+  color: white;
+  border: 1px solid #9B111E;
+
+}

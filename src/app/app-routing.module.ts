@@ -28,6 +28,12 @@ const routes: Routes = [
     path: 'exim-services',
     pathMatch: 'full',
     loadChildren: './pages/exim-services/exim-services.module#EximServicesModule'
+  },
+  {
+    path: 'career',
+    pathMatch: 'full',
+    loadChildren: './pages/career/career.module#CareerModule'
+
   }
 
   // { path: 'home',

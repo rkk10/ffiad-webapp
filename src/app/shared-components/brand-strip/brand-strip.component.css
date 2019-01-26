@@ -6,12 +6,12 @@ header{
 }
 
 .brand{
-    height: 50px;
-    width: 100vw;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
+  height: 50px;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 6px 0;
 
 }
 .brand-logo{
@@ -44,17 +44,16 @@ header{
   display: flex;
 }
 .email-logo,.phone-logo,.socials{
-  height: 22px;
-  width: 22px;
+  height: 18px;
+  width: 18px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0px 5px;
 }
 
-p{
+.email-contact{
   font-size: 14px;
-  font-weight: bold;
   color: #9B111E;
   margin: 0;
 }

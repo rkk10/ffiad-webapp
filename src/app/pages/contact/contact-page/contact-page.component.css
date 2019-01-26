@@ -98,29 +98,31 @@ svg{
 .city-map{
   height: 100%;
   width: 100%;
-
 }
 .place{
   height: 35px;
-  color: white;
-  background-color: #9B111E;
+  color: #9B111E;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .registered, .corporate{
   width: 50%;
-  height: calc(100% - 35px);
+  height: auto;
   /* border: 2px solid #9B111E; */
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+
 }
 .registered{
   margin-left: 5px;
+
 }
 .corporate{
   margin-right: 5px;
 }
 iframe{
-  height: 100%;
+  height: calc(100% - 35px);
   width: 100%;
 }
 
