@@ -1,8 +1,11 @@
-<app-header></app-header>
+<app-header (onMenuToggle)="handleMenuToggle($event)"></app-header>
 <section class="app-main-section">
-    <router-outlet></router-outlet>
+    <app-aside [isOpen]="isOpen"></app-aside>
+    <section class="router-section">
+        <router-outlet></router-outlet>
+    </section>
 
-  <!-- <app-aside [isOpen]="isOpen"></app-aside>
+  <!--
    <app-slider></app-slider>
   <app-event-container></app-event-container>
   <app-welcome-msg></app-welcome-msg>

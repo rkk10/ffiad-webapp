@@ -1,6 +1,6 @@
 .slider{
   width: 100%;
-  height: calc(100vh - 95px);
+  height: 75vh;
   background-color: #FFF2DF;
   background-image: url('../../../../assets/event-img.jpg');
   background-position: center;

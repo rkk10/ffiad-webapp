@@ -8,19 +8,16 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   isOpen: Boolean = true;
-
   // tslint:disable-next-line:no-output-on-prefix
   @Output() onMenuToggle: EventEmitter<Boolean> = new EventEmitter();
-  constructor() {
 
-   }
+  constructor() { }
 
   ngOnInit() {
   }
-  // tslint:disable-next-line:one-line
-  toggleMenu(){
+
+  toggleMenu() {
     this.isOpen = !this.isOpen;
-    // console.log('opend');
     this.onMenuToggle.emit(this.isOpen);
   }
 

@@ -7,7 +7,7 @@
 footer{
   min-height: 60vh;
   height: auto;
-  background-color: #9B111E;
+  background-color: #c3002f;
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +20,9 @@ footer{
 
 }
 .copyright{
-  background-color: #65000A;
+  background-color:#920020;
+
+  ;
   color: white;
   height: 30px;
   display: flex;
@@ -58,5 +60,5 @@ footer{
   margin: 0px 10px;
 }
 svg{
-  fill:#440007;
+  fill: #920020;
 }

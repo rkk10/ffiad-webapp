@@ -1,7 +1,7 @@
 .about-container{
   height: auto;
-  min-height: calc(100vh - 85px);
-  background-color: #9B111E;
+  min-height: 80vh;
+  background-color: #dd0031;
   color: white;
   display: flex;
   justify-content: center;

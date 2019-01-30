@@ -7,17 +7,13 @@
   min-height: 100vh;
 }
 
-app-ffiad-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-}
 .app-main-section{
   height: auto;
   min-height: 400px;
   padding-top: 85px;
   display: flex;
   flex-direction: column;
+}
+.router-section{
+  z-index: -1;
 }

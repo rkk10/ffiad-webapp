@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./aside.component.css']
 })
 export class AsideComponent implements OnInit {
-  @Input() isOpen: Boolean = true;
 
+  @Input() isOpen: Boolean = true;
   constructor() { }
 
   ngOnInit() {

@@ -9,9 +9,9 @@ header{
   position: fixed;
 }
 .head-section{
-    /* height: 35px; */
+    height: 35px;
     width: 100%;
-    background: #9B111E;
+    background: #c3002f;
     display: flex;
     flex-direction: row;
     align-items: center;

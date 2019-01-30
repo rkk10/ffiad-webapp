@@ -39,6 +39,11 @@ const routes: Routes = [
     path: 'membership',
     pathMatch: 'full',
     loadChildren: './pages/membership/membership.module#MembershipModule'
+  },
+  {
+    path: 'events',
+    pathMatch: 'full',
+    loadChildren: './pages/events/events.module#EventsModule'
   }
 
   // { path: 'home',
