@@ -1,0 +1,14 @@
+.heading{
+  width: fit-content;
+  border-bottom: 2px solid #1A237E;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1A237E;
+
+}
+.event-card-holder{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top:30px;
+}

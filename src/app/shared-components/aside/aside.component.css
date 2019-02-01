@@ -13,6 +13,7 @@ aside.aside-nav{
     /* z-index: 1; */
     padding-top: 100px;
     padding: 0px;
+    transition: all 320ms ease-in-out
 }
 
 .side-link{
@@ -30,5 +31,5 @@ a{
   color: white;
 }
 .aside-close{
-  transform: translateX(-250px);
+  transform: translateX(-280px);
 }

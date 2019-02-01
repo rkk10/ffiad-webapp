@@ -9,6 +9,7 @@ import { AsideComponent } from './shared-components/aside/aside.component';
 import { HomeModule} from './pages/home/home.module';
 import { BrandStripComponent } from './shared-components/brand-strip/brand-strip.component';
 import { SubscribeComponent } from './shared-components/subscribe/subscribe.component';
+import { UpcomingEventsModule } from './shared-components/upcoming-events/upcoming-events.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { SubscribeComponent } from './shared-components/subscribe/subscribe.comp
     FooterComponent,
     AsideComponent,
     BrandStripComponent,
-    SubscribeComponent
+    SubscribeComponent,
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    UpcomingEventsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
