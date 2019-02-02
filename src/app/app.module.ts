@@ -9,7 +9,6 @@ import { AsideComponent } from './shared-components/aside/aside.component';
 import { HomeModule} from './pages/home/home.module';
 import { BrandStripComponent } from './shared-components/brand-strip/brand-strip.component';
 import { SubscribeComponent } from './shared-components/subscribe/subscribe.component';
-import { UpcomingEventsModule } from './shared-components/upcoming-events/upcoming-events.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { UpcomingEventsModule } from './shared-components/upcoming-events/upcomi
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    UpcomingEventsModule
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
