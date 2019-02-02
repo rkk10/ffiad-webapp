@@ -3,7 +3,8 @@
   height: auto;
 }
 header{
-  padding: 0;
+  padding: 0 auto;
+  background-color: white;
 }
 
 .brand{
@@ -12,7 +13,7 @@ header{
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0 6px 0;
+  padding: 2px 0 2px 0;
 
 }
 .brand-logo{
@@ -28,10 +29,16 @@ header{
     justify-content: center;
     align-items: center;
     margin: 0px 15px;
+    line-height: 22px;
+
 }
 .brand-name{
-    font-size: 22px;
-    font-weight: bold;
+  font-size: 22px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .sub-title{
     font-size: 12px;
@@ -43,13 +50,20 @@ header{
 
 .contact{
   display: flex;
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-socials{
+  width: 25%;
+  justify-content: flex-end;
 }
 .email-logo,.phone-logo,.socials{
-  height: 18px;
+  height: 20px;
   width: 18px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0px 5px;
 }
 
@@ -60,4 +74,8 @@ header{
 }
 svg{
   fill: #9B111E;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
