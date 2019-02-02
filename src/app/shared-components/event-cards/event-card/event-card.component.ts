@@ -11,6 +11,7 @@ export class EventCardComponent implements OnInit {
   upcomingEvent: IEvent[] = [
     {
       title : 'How to start Business',
+      eventDay : '20 Jan',
       date : '20 jan 2019',
       location: 'pune',
       time : '10 am to 5 pm',
@@ -19,6 +20,7 @@ export class EventCardComponent implements OnInit {
       isEventActive: true
     },
     {
+      eventDay : '20 Jan',
       title : 'How to start Business',
       date : '20 jan 2019',
       location: 'pune',
@@ -28,9 +30,20 @@ export class EventCardComponent implements OnInit {
       isEventActive: true
     },
     {
+      eventDay : '20 Jan',
       title : 'How to start Business',
       date : '20 jan 2019',
-      location: 'pune',
+      location: 'Delhi',
+      time : '10 am to 5 pm',
+      price : '7500',
+      imgUrl : 'pune_event.jpg',
+      isEventActive: false
+    },
+    {
+      eventDay : '20 Jan',
+      title : 'How to start Business',
+      date : '20 jan 2019',
+      location: 'Delhi',
       time : '10 am to 5 pm',
       price : '7500',
       imgUrl : 'pune_event.jpg',
