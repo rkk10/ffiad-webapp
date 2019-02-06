@@ -44,6 +44,11 @@ const routes: Routes = [
     path: 'events',
     pathMatch: 'full',
     loadChildren: './pages/events/events.module#EventsModule'
+  },
+  {
+    path: 'export-license',
+    pathMatch: 'full',
+    loadChildren: './pages/exim-services/exim-services.module#EximServicesModule'
   }
 
   // { path: 'home',

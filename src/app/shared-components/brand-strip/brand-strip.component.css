@@ -79,3 +79,19 @@ svg{
   height: 100%;
   width: 100%;
 }
+
+
+/* Media Query */
+
+@media screen and (max-width: 1133px){
+  .email-contact{
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 1008px){
+  .email-contact{
+    font-size: 11px;
+  }
+}

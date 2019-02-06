@@ -2,13 +2,28 @@
   <div class="side-link" [routerLink]="['/homepage']" routerLinkActive="router-link-active" >
       Home
   </div>
-  <div class="side-link">
-    Events
+  <div class="side-link" [routerLink]="['/about']" routerLinkActive="router-link-active" >
+    About
+</div>
+  <div class="side-link panel">
+      <div class="panel-heading" (click)="isEventOpen = !isEventOpen" [class.leftMenu-close]="!isEventOpen">Events</div>
+      <div class="panel-body" [hidden]="isEventOpen">
+        <div class="panel">
+          <div class="panel-heading" (click)="isWoshopOpen = !isWoshopOpen">WorkShops</div>
+          <div class="panel-body" [hidden]="isWoshopOpen">All India One Day Events</div>
+          <div class="panel-body" [hidden]="isWoshopOpen">Pune One Week Practical WorkShops</div>
+          <div class="panel-body" [hidden]="isWoshopOpen">Apply For One Day/One Week WorkShops</div>
+        </div>
+      </div>
+
   </div>
   <div class="side-link" [routerLink]="['/exim-services']" routerLinkActive="router-link-active" >Exim Services</div>
   <div class="side-link">Produce Residue Free Farms</div>
   <div class="side-link">Testimonials</div>
   <div class="side-link">FPO Corner</div>
   <div class="side-link" [routerLink]="['/membership']" routerLinkActive="router-link-active" >FFIAD Membership</div>
+  <div class="side-link" [routerLink]="['/career']" routerLinkActive="router-link-active" >
+    Career
+</div>
   <div class="side-link" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</div>
 </aside>

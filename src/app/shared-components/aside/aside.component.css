@@ -13,7 +13,8 @@ aside.aside-nav{
     /* z-index: 1; */
     padding-top: 100px;
     padding: 0px;
-    transition: all 320ms ease-in-out
+    transition: all 320ms ease-in-out;
+    font-family: "Roboto Condenced Light";
 }
 
 .side-link{
@@ -22,7 +23,7 @@ aside.aside-nav{
   padding: 5px 20px;
   margin: 6px 4px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   border-bottom: 1px solid black;
   cursor: pointer;
 }
@@ -33,3 +34,19 @@ a{
 .aside-close{
   transform: translateX(-280px);
 }
+
+.panel-heading{
+  padding: 5px 0;
+
+}
+.panel-body{
+  padding: 6px 0;
+  border-bottom: 0.5p rgba(0,0,0,0.3) solid;
+  /* font-weight: 300; */
+  font-size: 14px;
+}
+.leftMenu-close{
+  background-color: rgba(81, 0, 8, 0.9);
+}
+/* Media Queries */
+
