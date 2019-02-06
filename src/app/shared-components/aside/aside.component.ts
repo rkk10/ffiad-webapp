@@ -10,9 +10,10 @@ export class AsideComponent implements OnInit {
   @Input() isOpen: Boolean = true;
 
   isEventOpen: Boolean = true;
-  isWoshopOpen: Boolean = true;
-  // isPuneSeminarOpen: Boolean = false;
-  // isApplyOpen: Boolean = false;
+  isWorkshopOpen: Boolean = true;
+  isGlobalOpen: Boolean = true;
+  isProductOpen: Boolean = true;
+  isMeetOpen: Boolean = true;
   constructor() { }
 
   ngOnInit() {

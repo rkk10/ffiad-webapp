@@ -44,9 +44,15 @@ a{
   border-bottom: 0.5p rgba(0,0,0,0.3) solid;
   /* font-weight: 300; */
   font-size: 14px;
+  padding-left: 10px;
 }
 .leftMenu-close{
   background-color: rgba(81, 0, 8, 0.9);
 }
+.child-menu{
+  padding-left: 20px;
+  font-family: 'Roboto';
+}
+
 /* Media Queries */
 

@@ -9,12 +9,45 @@
       <div class="panel-heading" (click)="isEventOpen = !isEventOpen" [class.leftMenu-close]="!isEventOpen">Events</div>
       <div class="panel-body" [hidden]="isEventOpen">
         <div class="panel">
-          <div class="panel-heading" (click)="isWoshopOpen = !isWoshopOpen">WorkShops</div>
-          <div class="panel-body" [hidden]="isWoshopOpen">All India One Day Events</div>
-          <div class="panel-body" [hidden]="isWoshopOpen">Pune One Week Practical WorkShops</div>
-          <div class="panel-body" [hidden]="isWoshopOpen">Apply For One Day/One Week WorkShops</div>
+          <div class="panel-heading" (click)="isWorkshopOpen = !isWorkshopOpen">WorkShops</div>
+          <div class="panel-body child-menu" [hidden]="isWorkshopOpen">All India One Day Events</div>
+          <div class="panel-body child-menu" [hidden]="isWorkshopOpen">Pune One Week Practical WorkShops</div>
+          <div class="panel-body child-menu" [hidden]="isWorkshopOpen">Apply For One Day/One Week WorkShops</div>
         </div>
       </div>
+
+      <div class="panel-body" [hidden]="isEventOpen">
+        <div class="panel">
+          <div class="panel-heading" (click)="isGlobalOpen = !isGlobalOpen">Global Buyer Meeting & Market Visit</div>
+          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Dubai-Saudi-Oman</div>
+          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Singapore-Hongkong-Malaysia</div>
+          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Netherland-Uk-Germany</div>
+          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Moscow-Russia</div>
+          <div class="panel-body child-menu" [hidden]="isGlobalOpen">USA-Canada</div>
+          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Apply For Global Market Visit</div>
+        </div>
+      </div>
+
+      <div class="panel-body" [hidden]="isEventOpen">
+        <div class="panel">
+          <div class="panel-heading" (click)="isProductOpen = !isProductOpen">Exhibit Products</div>
+          <div class="panel-body child-menu" [hidden]="isProductOpen">In Dubai</div>
+          <div class="panel-body child-menu" [hidden]="isProductOpen">In Europe</div>
+          <div class="panel-body child-menu" [hidden]="isProductOpen">In Singapore/Hongkong</div>
+          <div class="panel-body child-menu" [hidden]="isProductOpen">In Russia</div>
+          <div class="panel-body child-menu" [hidden]="isProductOpen">In USA/Canada</div>
+          <div class="panel-body child-menu" [hidden]="isProductOpen">Apply To Exhibit Your Products</div>
+        </div>
+
+      </div>
+      <div class="panel-body" [hidden]="isEventOpen">
+        <div class="panel">
+          <div class="panel-heading" (click)="isMeetOpen = !isMeetOpen">Meet Buyers In India</div>
+          <div class="panel-body child-menu" [hidden]="isMeetOpen">Apply For Buyers Meeting In India</div>
+        </div>
+
+      </div>
+
 
   </div>
   <div class="side-link" [routerLink]="['/exim-services']" routerLinkActive="router-link-active" >Exim Services</div>
