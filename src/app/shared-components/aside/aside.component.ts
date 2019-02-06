@@ -14,6 +14,12 @@ export class AsideComponent implements OnInit {
   isGlobalOpen: Boolean = true;
   isProductOpen: Boolean = true;
   isMeetOpen: Boolean = true;
+  isServiceOpen: Boolean = true;
+  isProduceOpen: Boolean = true;
+  isTesoOpen: Boolean = true;
+  isMemberOpen: Boolean = true;
+  isCornerOpen: Boolean = true;
+
   constructor() { }
 
   ngOnInit() {

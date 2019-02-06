@@ -50,11 +50,25 @@
 
 
   </div>
-  <div class="side-link" [routerLink]="['/exim-services']" routerLinkActive="router-link-active" >Exim Services</div>
+  <div class="side-link panel" [routerLink]="['/exim-services']" routerLinkActive="router-link-active" >
+    <div class="panel-heading " (click)="isServiceOpen = !isServiceOpen">Exim Services</div>
+    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Export License</div>
+    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Packhouse One Rent</div>
+    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Quality Certification</div>
+    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Customs Clearance</div>
+    <div class="panel-body child-menu" [hidden]="isServiceOpen">Projects - Pomegranate Aril Processing</div>
+  </div>
   <div class="side-link">Produce Residue Free Farms</div>
   <div class="side-link">Testimonials</div>
   <div class="side-link">FPO Corner</div>
-  <div class="side-link" [routerLink]="['/membership']" routerLinkActive="router-link-active" >FFIAD Membership</div>
+
+  <div class="side-link panel" [routerLink]="['/membership']" routerLinkActive="router-link-active" >
+    <div class="panel-heading" (click)="isMemberOpen = !isMemberOpen">FFIAD Membership</div>
+    <div class="panel-body child-menu" [hidden]="isMemberOpen">Students Membership</div>
+    <div class="panel-body child-menu" [hidden]="isMemberOpen">Beginner Exporter Membership</div>
+    <div class="panel-body child-menu" [hidden]="isMemberOpen">Exporters Membership</div>
+
+  </div>
   <div class="side-link" [routerLink]="['/career']" routerLinkActive="router-link-active" >
     Career
 </div>

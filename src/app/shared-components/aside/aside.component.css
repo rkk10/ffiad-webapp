@@ -2,6 +2,7 @@
   display: block;
   /* width: 275px; */
   height: auto;
+  overflow: scroll;
 }
 
 aside.aside-nav{
