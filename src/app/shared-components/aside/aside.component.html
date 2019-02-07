@@ -1,76 +1,123 @@
 <aside class="aside-nav" [class.aside-close]="!isOpen">
-  <div class="side-link" [routerLink]="['/homepage']" routerLinkActive="router-link-active" >
-      Home
+  <div class="side-link" [routerLink]="['/homepage']" routerLinkActive="router-link-active">
+    Home
   </div>
-  <div class="side-link" [routerLink]="['/about']" routerLinkActive="router-link-active" >
+  <div class="side-link" [routerLink]="['/about']" routerLinkActive="router-link-active">
     About
-</div>
+  </div>
   <div class="side-link panel">
-      <div class="panel-heading" (click)="isEventOpen = !isEventOpen" [class.leftMenu-close]="!isEventOpen">Events</div>
-      <div class="panel-body" [hidden]="isEventOpen">
-        <div class="panel">
-          <div class="panel-heading" (click)="isWorkshopOpen = !isWorkshopOpen">WorkShops</div>
-          <div class="panel-body child-menu" [hidden]="isWorkshopOpen">All India One Day Events</div>
-          <div class="panel-body child-menu" [hidden]="isWorkshopOpen">Pune One Week Practical WorkShops</div>
-          <div class="panel-body child-menu" [hidden]="isWorkshopOpen">Apply For One Day/One Week WorkShops</div>
+    <div class="panel-heading d-flex" (click)="isEventOpen = !isEventOpen" [class.leftMenu-close]="!isEventOpen">
+      <div>Events</div>
+      <div class="arrow"></div>
+    </div>
+    <div class="panel-body" [hidden]="isEventOpen">
+      <div class="panel">
+        <div class="panel-heading" (click)="isWorkshopOpen = !isWorkshopOpen">
+          <div>WorkShops</div>
+          <div class="arrow"></div>
         </div>
+        <div class="panel-body child-menu" [hidden]="isWorkshopOpen">All India One Day Events</div>
+        <div class="panel-body child-menu" [hidden]="isWorkshopOpen">Pune One Week Practical WorkShops</div>
+        <div class="panel-body child-menu" [hidden]="isWorkshopOpen">Apply For One Day/One Week WorkShops</div>
+      </div>
+    </div>
+
+    <div class="panel-body" [hidden]="isEventOpen">
+      <div class="panel">
+        <div class="panel-heading" (click)="isGlobalOpen = !isGlobalOpen">
+          <div>Global Buyer Meeting & Market Visit</div>
+          <div class="arrow"></div>
+        </div>
+        <div class="panel-body child-menu" [hidden]="isGlobalOpen">Dubai-Saudi-Oman</div>
+        <div class="panel-body child-menu" [hidden]="isGlobalOpen">Singapore-Hongkong-Malaysia</div>
+        <div class="panel-body child-menu" [hidden]="isGlobalOpen">Netherland-Uk-Germany</div>
+        <div class="panel-body child-menu" [hidden]="isGlobalOpen">Moscow-Russia</div>
+        <div class="panel-body child-menu" [hidden]="isGlobalOpen">USA-Canada</div>
+        <div class="panel-body child-menu" [hidden]="isGlobalOpen">Apply For Global Market Visit</div>
+      </div>
+    </div>
+
+    <div class="panel-body" [hidden]="isEventOpen">
+      <div class="panel">
+        <div class="panel-heading" (click)="isProductOpen = !isProductOpen">
+          <div>
+            Exhibit Products
+          </div>
+          <div class="arrow"></div>
+        </div>
+        <div class="panel-body child-menu" [hidden]="isProductOpen">In Dubai</div>
+        <div class="panel-body child-menu" [hidden]="isProductOpen">In Europe</div>
+        <div class="panel-body child-menu" [hidden]="isProductOpen">In Singapore/Hongkong</div>
+        <div class="panel-body child-menu" [hidden]="isProductOpen">In Russia</div>
+        <div class="panel-body child-menu" [hidden]="isProductOpen">In USA/Canada</div>
+        <div class="panel-body child-menu" [hidden]="isProductOpen">Apply To Exhibit Your Products</div>
       </div>
 
-      <div class="panel-body" [hidden]="isEventOpen">
-        <div class="panel">
-          <div class="panel-heading" (click)="isGlobalOpen = !isGlobalOpen">Global Buyer Meeting & Market Visit</div>
-          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Dubai-Saudi-Oman</div>
-          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Singapore-Hongkong-Malaysia</div>
-          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Netherland-Uk-Germany</div>
-          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Moscow-Russia</div>
-          <div class="panel-body child-menu" [hidden]="isGlobalOpen">USA-Canada</div>
-          <div class="panel-body child-menu" [hidden]="isGlobalOpen">Apply For Global Market Visit</div>
+    </div>
+    <div class="panel-body" [hidden]="isEventOpen">
+      <div class="panel">
+        <div class="panel-heading" (click)="isMeetOpen = !isMeetOpen">
+          <div>Meet Buyers In India</div>
+          <div class="arrow"></div>
         </div>
+        <div class="panel-body child-menu" [hidden]="isMeetOpen">Apply For Buyers Meeting In India</div>
       </div>
 
-      <div class="panel-body" [hidden]="isEventOpen">
-        <div class="panel">
-          <div class="panel-heading" (click)="isProductOpen = !isProductOpen">Exhibit Products</div>
-          <div class="panel-body child-menu" [hidden]="isProductOpen">In Dubai</div>
-          <div class="panel-body child-menu" [hidden]="isProductOpen">In Europe</div>
-          <div class="panel-body child-menu" [hidden]="isProductOpen">In Singapore/Hongkong</div>
-          <div class="panel-body child-menu" [hidden]="isProductOpen">In Russia</div>
-          <div class="panel-body child-menu" [hidden]="isProductOpen">In USA/Canada</div>
-          <div class="panel-body child-menu" [hidden]="isProductOpen">Apply To Exhibit Your Products</div>
-        </div>
-
-      </div>
-      <div class="panel-body" [hidden]="isEventOpen">
-        <div class="panel">
-          <div class="panel-heading" (click)="isMeetOpen = !isMeetOpen">Meet Buyers In India</div>
-          <div class="panel-body child-menu" [hidden]="isMeetOpen">Apply For Buyers Meeting In India</div>
-        </div>
-
-      </div>
+    </div>
 
 
   </div>
-  <div class="side-link panel" [routerLink]="['/exim-services']" routerLinkActive="router-link-active" >
-    <div class="panel-heading " (click)="isServiceOpen = !isServiceOpen">Exim Services</div>
+  <div class="side-link panel" [routerLink]="['/exim-services']" routerLinkActive="router-link-active">
+    <div class="panel-heading " (click)="isServiceOpen = !isServiceOpen">
+      <div>Exim Services</div>
+      <div class="arrow"></div>
+    </div>
     <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Export License</div>
     <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Packhouse One Rent</div>
     <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Quality Certification</div>
     <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Customs Clearance</div>
     <div class="panel-body child-menu" [hidden]="isServiceOpen">Projects - Pomegranate Aril Processing</div>
   </div>
-  <div class="side-link">Produce Residue Free Farms</div>
-  <div class="side-link">Testimonials</div>
-  <div class="side-link">FPO Corner</div>
+  <div class="side-link panel">
+    <div class="panel-heading" (click)="isProduceOpen = !isProduceOpen">
+      <div>Produce Residue Free Farms</div>
+      <div class="arrow"></div>
+    </div>
+    <div class="panel-body child-menu" [hidden]="isProduceOpen">Apply For Farm Services</div>
+    <div class="panel-body child-menu" [hidden]="isProduceOpen">Farm Consultancy Structure</div>
 
-  <div class="side-link panel" [routerLink]="['/membership']" routerLinkActive="router-link-active" >
-    <div class="panel-heading" (click)="isMemberOpen = !isMemberOpen">FFIAD Membership</div>
+
+  </div>
+  <div class="side-link panel">
+    <div class="panel-heading" (click)="isTestimonials = !isTestimonials">
+      <div>Testimonials</div>
+      <div class="arrow"></div>
+    </div>
+    <div class="panel-body child-menu" [hidden]="isTestimonials">Workshop Feedback</div>
+    <div class="panel-body child-menu" [hidden]="isTestimonials">Global Buyer Seller Meeting Feedback</div>
+  </div>
+  <div class="side-link panel">
+    <div class="panel-heading" (click)="isFpoOpen = !isFpoOpen">
+      <div>FPO Corner</div>
+      <div class="arrow"></div>
+    </div>
+    <div class="panel-body" [hidden]="isFpoOpen">Information For FPO</div>
+    <div class="panel-body" [hidden]="isFpoOpen">Apply For Company</div>
+
+  </div>
+
+  <div class="side-link panel" [routerLink]="['/membership']" routerLinkActive="router-link-active">
+    <div class="panel-heading" (click)="isMemberOpen = !isMemberOpen">
+      <div>FFIAD Membership</div>
+      <div class="arrow"></div>
+    </div>
     <div class="panel-body child-menu" [hidden]="isMemberOpen">Students Membership</div>
     <div class="panel-body child-menu" [hidden]="isMemberOpen">Beginner Exporter Membership</div>
     <div class="panel-body child-menu" [hidden]="isMemberOpen">Exporters Membership</div>
 
   </div>
-  <div class="side-link" [routerLink]="['/career']" routerLinkActive="router-link-active" >
+  <div class="side-link" [routerLink]="['/career']" routerLinkActive="router-link-active">
     Career
-</div>
-  <div class="side-link" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</div>
+  </div>
+  <div class="side-link" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</div>
 </aside>

@@ -54,6 +54,17 @@ a{
   padding-left: 20px;
   font-family: 'Roboto';
 }
-
+.arrow{
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/logos/right-chevron.png');
+  background-size: contain;
+  background-position: center;
+}
+.panel-heading{
+  display: flex;
+  justify-content: space-between;
+}
 /* Media Queries */
 
