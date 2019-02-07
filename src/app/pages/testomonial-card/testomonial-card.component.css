@@ -17,19 +17,19 @@
   height: 40px;
   width: 100%;
   text-align: center;
+  color: #9B111E;
 }
 
 .testo-img{
   width: 150px;
   height: 100%;
   padding: 10px;
-  background-color: coral;
   display: flex;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: mediumspringgreen;
+  background-color: #FFF2DF;
 }
 .testo-feedback{
   flex: 1;
@@ -42,7 +42,6 @@
 .testo-name{
   font-size: 14px;
   font-weight: bold;
-  color: black;
   font-family: "Roboto Thin";
 }
 .testo-occupation{
