@@ -10,6 +10,9 @@ import { SubscribeContainerComponent } from './subscribe-container/subscribe-con
 import { MissionTabComponent } from './mission-tab/mission-tab.component';
 import { UpcomingEventComponent } from 'src/app/shared-components/upcoming-event/upcoming-event.component';
 import { EventCardComponent } from 'src/app/shared-components/event-cards/event-card/event-card.component';
+import { TestomonialsHolderComponent } from '../testomonials-holder/testomonials-holder.component';
+import { TestomonialCardComponent } from '../testomonial-card/testomonial-card.component';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +24,14 @@ import { EventCardComponent } from 'src/app/shared-components/event-cards/event-
     MissionTabComponent,
     UpcomingEventComponent,
     EventCardComponent,
+    TestomonialsHolderComponent,
+    TestomonialCardComponent
   ],
 
   imports: [
     CommonModule,
     HomeRoutingModule,
+
   ]
 })
 export class HomeModule { }

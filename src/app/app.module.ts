@@ -10,6 +10,8 @@ import { AsideComponent } from './shared-components/aside/aside.component';
 import { HomeModule} from './pages/home/home.module';
 import { BrandStripComponent } from './shared-components/brand-strip/brand-strip.component';
 import { SubscribeComponent } from './shared-components/subscribe/subscribe.component';
+// import { TestomonialsHolderComponent } from './pages/testomonials-holder/testomonials-holder.component';
+// import { TestomonialCardComponent } from './pages/testomonial-card/testomonial-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { SubscribeComponent } from './shared-components/subscribe/subscribe.comp
     AsideComponent,
     BrandStripComponent,
     SubscribeComponent,
+    // TestomonialsHolderComponent,
+    // TestomonialCardComponent,
    ],
   imports: [
     BrowserModule,

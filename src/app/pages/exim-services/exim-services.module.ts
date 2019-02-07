@@ -19,7 +19,8 @@ import { PomoArilProcessingComponent } from './pomo-aril-processing/pomo-aril-pr
   ],
   imports: [
     CommonModule,
-    EximServicesRoutingModule
+    EximServicsModule
   ]
 })
-export class EximServicesModule { }
+
+export class EximServicsModule { }
