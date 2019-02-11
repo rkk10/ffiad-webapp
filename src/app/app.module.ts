@@ -10,6 +10,12 @@ import { AsideComponent } from './shared-components/aside/aside.component';
 import { HomeModule} from './pages/home/home.module';
 import { BrandStripComponent } from './shared-components/brand-strip/brand-strip.component';
 import { SubscribeComponent } from './shared-components/subscribe/subscribe.component';
+import { EximServicsModule } from './pages/exim-services/exim-services.module';
+import { ExportLicenseModule } from './pages/export-license/export-license.module';
+import { PackhouseOnRentModule } from './pages/packhous-on-rent/packhouse-on-rent.module';
+import { QualityCertificationModule } from './pages/quality-certification/quality-certification.module';
+import { CustomsClearanceModule } from './pages/customs-clearance/customs-clearance.module';
+import { PomoArilProcessModule } from './pomo-aril-process/pomo-aril-process.module';
 // import { TestomonialsHolderComponent } from './pages/testomonials-holder/testomonials-holder.component';
 // import { TestomonialCardComponent } from './pages/testomonial-card/testomonial-card.component';
 
@@ -21,6 +27,9 @@ import { SubscribeComponent } from './shared-components/subscribe/subscribe.comp
     AsideComponent,
     BrandStripComponent,
     SubscribeComponent,
+
+
+
     // TestomonialsHolderComponent,
     // TestomonialCardComponent,
    ],
@@ -28,6 +37,12 @@ import { SubscribeComponent } from './shared-components/subscribe/subscribe.comp
     BrowserModule,
     AppRoutingModule,
     HomeModule,
+    EximServicsModule,
+    ExportLicenseModule,
+    PackhouseOnRentModule,
+    QualityCertificationModule,
+    CustomsClearanceModule,
+    PomoArilProcessModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PomoArilProcessingComponent } from './pomo-aril-processing.component';
+import { PomoArilProcessComponent } from './pomo-aril-process.component';
 
-describe('PomoArilProcessingComponent', () => {
-  let component: PomoArilProcessingComponent;
-  let fixture: ComponentFixture<PomoArilProcessingComponent>;
+describe('PomoArilProcessComponent', () => {
+  let component: PomoArilProcessComponent;
+  let fixture: ComponentFixture<PomoArilProcessComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PomoArilProcessingComponent ]
+      declarations: [ PomoArilProcessComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PomoArilProcessingComponent);
+    fixture = TestBed.createComponent(PomoArilProcessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

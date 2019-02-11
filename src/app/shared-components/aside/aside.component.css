@@ -2,11 +2,12 @@
   display: block;
   /* width: 275px; */
   height: auto;
+  min-height: 100%;
   overflow: scroll;
 }
 
 aside.aside-nav{
-    height: 100%;
+    /* height: 100%; */
     width: 275px;
     background-color: #510008;
     position: fixed;
@@ -16,6 +17,8 @@ aside.aside-nav{
     padding: 0px;
     transition: all 320ms ease-in-out;
     font-family: "Roboto Condenced Light";
+    height: calc(100vh - 85px);
+    overflow: scroll;
 }
 
 .side-link{

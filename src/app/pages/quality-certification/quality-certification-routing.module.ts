@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EximServicesComponent } from './exim-services/exim-services.component';
+import { QualityCertificationComponent } from './quality-certification/quality-certification.component';
 const routes: Routes = [
   {
     path: '',
-    component: EximServicesComponent
-  },
-
+    component: QualityCertificationComponent
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class EximServicesRoutingModule { }
+export class QualityCertificationRoutingModule { }

@@ -45,12 +45,12 @@
           </div>
           <div class="arrow"></div>
         </div>
-        <div class="panel-body child-menu" [hidden]="isProductOpen">In Dubai</div>
-        <div class="panel-body child-menu" [hidden]="isProductOpen">In Europe</div>
-        <div class="panel-body child-menu" [hidden]="isProductOpen">In Singapore/Hongkong</div>
-        <div class="panel-body child-menu" [hidden]="isProductOpen">In Russia</div>
-        <div class="panel-body child-menu" [hidden]="isProductOpen">In USA/Canada</div>
-        <div class="panel-body child-menu" [hidden]="isProductOpen">Apply To Exhibit Your Products</div>
+        <div class="panel-body" [hidden]="isProductOpen">In Dubai</div>
+        <div class="panel-body" [hidden]="isProductOpen">In Europe</div>
+        <div class="panel-body" [hidden]="isProductOpen">In Singapore/Hongkong</div>
+        <div class="panel-body" [hidden]="isProductOpen">In Russia</div>
+        <div class="panel-body" [hidden]="isProductOpen">In USA/Canada</div>
+        <div class="panel-body" [hidden]="isProductOpen">Apply To Exhibit Your Products</div>
       </div>
 
     </div>
@@ -60,31 +60,32 @@
           <div>Meet Buyers In India</div>
           <div class="arrow"></div>
         </div>
-        <div class="panel-body child-menu" [hidden]="isMeetOpen">Apply For Buyers Meeting In India</div>
+        <div class="panel-body" [hidden]="isMeetOpen">Apply For Buyers Meeting In India</div>
       </div>
 
     </div>
 
 
   </div>
-  <div class="side-link panel" [routerLink]="['/exim-services']" routerLinkActive="router-link-active">
+  <div class="side-link panel" >
     <div class="panel-heading " (click)="isServiceOpen = !isServiceOpen">
-      <div>Exim Services</div>
+      <div [routerLink]="['/exim-services']" routerLinkActive="router-link-active">Exim Services</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Export License</div>
-    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Packhouse One Rent</div>
-    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Quality Certification</div>
-    <div class="panel-body child-menu" [hidden]="isServiceOpen">Apply For Customs Clearance</div>
-    <div class="panel-body child-menu" [hidden]="isServiceOpen">Projects - Pomegranate Aril Processing</div>
+    <div class="panel-body" [hidden]="isServiceOpen" [routerLink]="['/export-license']" routerLinkActive="router-link-active" >Apply For Export License</div>
+    <div class="panel-body" [hidden]="isServiceOpen" [routerLink]="['/packhouse-on-rent']" routerLinkActive="router-link-active" >Apply For Packhouse One Rent</div>
+    <div class="panel-body" [hidden]="isServiceOpen" [routerLink]="['/quality-certification']" routerLinkActive="router-link-active" >Apply For Quality Certification</div>
+    <div class="panel-body" [hidden]="isServiceOpen" [routerLink]="['/customs-clearance']" routerLinkActive="router-link-active"  >Apply For Customs Clearance</div>
+    <div class="panel-body" [hidden]="isServiceOpen" [routerLink]="['/pomo-aril-process']" routerLinkActive="router-link-active"  >Projects - Pomegranate Aril Processing</div>
   </div>
   <div class="side-link panel">
     <div class="panel-heading" (click)="isProduceOpen = !isProduceOpen">
       <div>Produce Residue Free Farms</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body child-menu" [hidden]="isProduceOpen">Apply For Farm Services</div>
-    <div class="panel-body child-menu" [hidden]="isProduceOpen">Farm Consultancy Structure</div>
+    <div class="panel-body" [hidden]="isProduceOpen">Apply For Farm Services</div>
+    <div class="panel-body" [hidden]="isProduceOpen">Farm Consultancy Structure</div>
+
 
 
   </div>
@@ -93,8 +94,8 @@
       <div>Testimonials</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body child-menu" [hidden]="isTestimonials">Workshop Feedback</div>
-    <div class="panel-body child-menu" [hidden]="isTestimonials">Global Buyer Seller Meeting Feedback</div>
+    <div class="panel-body" [hidden]="isTestimonials">Workshop Feedback</div>
+    <div class="panel-body" [hidden]="isTestimonials">Global Buyer Seller Meeting Feedback</div>
   </div>
   <div class="side-link panel">
     <div class="panel-heading" (click)="isFpoOpen = !isFpoOpen">
@@ -111,9 +112,9 @@
       <div>FFIAD Membership</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body child-menu" [hidden]="isMemberOpen">Students Membership</div>
-    <div class="panel-body child-menu" [hidden]="isMemberOpen">Beginner Exporter Membership</div>
-    <div class="panel-body child-menu" [hidden]="isMemberOpen">Exporters Membership</div>
+    <div class="panel-body" [hidden]="isMemberOpen">Students Membership</div>
+    <div class="panel-body" [hidden]="isMemberOpen">Beginner Exporter Membership</div>
+    <div class="panel-body" [hidden]="isMemberOpen">Exporters Membership</div>
 
   </div>
   <div class="side-link" [routerLink]="['/career']" routerLinkActive="router-link-active">

@@ -27,7 +27,7 @@ const routes: Routes = [
   {
     path: 'exim-services',
     pathMatch: 'full',
-    loadChildren: './pages/exim-services/exim-services.module#EximServicesModule'
+    loadChildren: './pages/exim-services/exim-services.module#EximServicsModule'
   },
   {
     path: 'career',
@@ -48,7 +48,27 @@ const routes: Routes = [
   {
     path: 'export-license',
     pathMatch: 'full',
-    loadChildren: './pages/exim-services/exim-services.module#EximServicesModule'
+    loadChildren: './pages/export-license/export-license.module#ExportLicenseModule'
+  },
+  {
+    path: 'packhouse-on-rent',
+    pathMatch: 'full',
+    loadChildren: './pages/packhous-on-rent/packhouse-on-rent.module#PackhouseOnRentModule'
+  },
+  {
+    path: 'quality-certification',
+    pathMatch: 'full',
+    loadChildren: './pages/quality-certification/quality-certification.module#QualityCertificationModule'
+  },
+  {
+    path: 'customs-clearance',
+    pathMatch: 'full',
+    loadChildren: './pages/customs-clearance/customs-clearance.module#CustomsClearanceModule'
+  },
+  {
+    path: 'pomo-aril-process',
+    pathMatch: 'full',
+    loadChildren: './pomo-aril-process/pomo-aril-process.module#PomoArilProcessModule'
   }
 
   // { path: 'home',
