@@ -1,0 +1,30 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 0;
+}
+.panel{
+  width: 100%;
+}
+.panel-heading{
+  background-color: #FFF2DF;
+  padding: 10px 20px;
+  color: #9B111E;
+}
+.panel-body{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.panel-body > p{
+  color: gray;
+}
+.pack-house-photos{
+  height: 250px ;
+  width: 300px;
+  background-color: aqua;
+  margin: 10px 5px;
+}
