@@ -69,8 +69,17 @@ const routes: Routes = [
     path: 'pomo-aril-process',
     pathMatch: 'full',
     loadChildren: './pomo-aril-process/pomo-aril-process.module#PomoArilProcessModule'
+  },
+  {
+    path: 'apply-fpo',
+    pathMatch: 'full',
+    loadChildren: './pages/apply-fpo/apply-fpo.module#ApplyFpoModule'
+  },
+  {
+    path: 'fpo-corner',
+    pathMatch: 'full',
+    loadChildren: './pages/fpo-corner/fpo-corner.module#FpoCornerModule'
   }
-
   // { path: 'home',
   //   loadChildren: './pages/home/home.module#HomeModule'
   // }
