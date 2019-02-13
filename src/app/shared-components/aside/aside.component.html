@@ -83,8 +83,8 @@
       <div>Produce Residue Free Farms</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body" [hidden]="isProduceOpen">Apply For Farm Services</div>
-    <div class="panel-body" [hidden]="isProduceOpen">Farm Consultancy Structure</div>
+    <div class="panel-body" [hidden]="isProduceOpen" [routerLink]="['/farm-services']" routerLinkActive="router-link-active"  >Apply For Farm Services</div>
+    <div class="panel-body" [hidden]="isProduceOpen" [routerLink]="['/farm-consultancy']" routerLinkActive="router-link-active"  >Farm Consultancy Structure</div>
 
 
 
@@ -94,8 +94,8 @@
       <div>Testimonials</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body" [hidden]="isTestimonials">Workshop Feedback</div>
-    <div class="panel-body" [hidden]="isTestimonials">Global Buyer Seller Meeting Feedback</div>
+    <div class="panel-body" [hidden]="isTestimonials" [routerLink]="['/workshop-feedback']" routerLinkActive="router-link-active" >Workshop Feedback</div>
+    <div class="panel-body" [hidden]="isTestimonials" [routerLink]="['/meeting-feedback']" routerLinkActive="router-link-active" >Global Buyer Seller Meeting Feedback</div>
   </div>
   <div class="side-link panel">
     <div class="panel-heading" (click)="isFpoOpen = !isFpoOpen">
@@ -103,18 +103,18 @@
       <div class="arrow"></div>
     </div>
     <div class="panel-body" [hidden]="isFpoOpen" [routerLink]="['/fpo-corner']" routerLinkActive="router-link-active"  >Information For FPO</div>
-    <div class="panel-body" [hidden]="isFpoOpen" [routerLink]="['/apply-fpo']" routerLinkActive="router-link-active" >Apply For Company</div>
+    <div class="panel-body" [hidden]="isFpoOpen" [routerLink]="['/apply-fpo']" routerLinkActive="router-link-active" >Apply For FPO Company</div>
 
   </div>
 
-  <div class="side-link panel" [routerLink]="['/membership']" routerLinkActive="router-link-active">
+  <div class="side-link panel" >
     <div class="panel-heading" (click)="isMemberOpen = !isMemberOpen">
-      <div>FFIAD Membership</div>
+      <div [routerLink]="['/membership']" routerLinkActive="router-link-active">FFIAD Membership</div>
       <div class="arrow"></div>
     </div>
-    <div class="panel-body" [hidden]="isMemberOpen">Students Membership</div>
-    <div class="panel-body" [hidden]="isMemberOpen">Beginner Exporter Membership</div>
-    <div class="panel-body" [hidden]="isMemberOpen">Exporters Membership</div>
+    <div class="panel-body" [hidden]="isMemberOpen" [routerLink]="['/student-membership']" routerLinkActive="router-link-active" >Students Membership</div>
+    <div class="panel-body" [hidden]="isMemberOpen" [routerLink]="['/beginner-export']" routerLinkActive="router-link-active" >Beginner Exporter Membership</div>
+    <div class="panel-body" [hidden]="isMemberOpen" [routerLink]="['/export-membership']" routerLinkActive="router-link-active" >Exporters Membership</div>
 
   </div>
   <div class="side-link" [routerLink]="['/career']" routerLinkActive="router-link-active">

@@ -27,9 +27,6 @@ import { PomoArilProcessModule } from './pomo-aril-process/pomo-aril-process.mod
     AsideComponent,
     BrandStripComponent,
     SubscribeComponent,
-
-
-
     // TestomonialsHolderComponent,
     // TestomonialCardComponent,
    ],

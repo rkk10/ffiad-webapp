@@ -79,6 +79,41 @@ const routes: Routes = [
     path: 'fpo-corner',
     pathMatch: 'full',
     loadChildren: './pages/fpo-corner/fpo-corner.module#FpoCornerModule'
+  },
+  {
+    path: 'export-membership',
+    pathMatch: 'full',
+    loadChildren: './pages/export-membership/export-membership.module#ExportMembershipModule'
+  },
+  {
+    path: 'beginner-export',
+    pathMatch: 'full',
+    loadChildren: './pages/beginner-export/begineer-export.module#BegineerExportModule'
+  },
+  {
+    path: 'student-membership',
+    pathMatch: 'full',
+    loadChildren: './pages/student-membership/student-membership.module#StudentMembershipModule'
+  },
+  {
+    path: 'workshop-feedback',
+    pathMatch: 'full',
+    loadChildren: './pages/workshop-feedback/workshop-feedback.module#WorkshopFeedbackModule'
+  },
+  {
+    path: 'meeting-feedback',
+    pathMatch: 'full',
+    loadChildren: './pages/meeting-feedback/meeting-feedback.module#MeetingFeedbackModule'
+  },
+  {
+    path: 'farm-services',
+    pathMatch: 'full',
+    loadChildren: './pages/farm-services/farm-services.module#FarmServicesModule'
+  },
+  {
+    path: 'farm-consultancy',
+    pathMatch: 'full',
+    loadChildren: './pages/farm-consultancy/farm-consultancy.module#FarmConsultancyModule'
   }
   // { path: 'home',
   //   loadChildren: './pages/home/home.module#HomeModule'
