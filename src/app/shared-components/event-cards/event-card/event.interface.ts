@@ -1,4 +1,4 @@
-export interface IEvent {
+export default interface IEvent {
   eventDay: string;
   title: string;
   date: string;
