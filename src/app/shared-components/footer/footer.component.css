@@ -11,6 +11,11 @@ footer{
   display: flex;
   flex-direction: column;
 }
+.footer-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
 .link-holder{
   min-height: calc(60vh - 70px);
   height: auto;
@@ -32,15 +37,17 @@ footer{
 .link-title{
   color: white;
   width: fit-content;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   font-weight: bold;
   font-size: 14px;
   margin: 10px 0;
+  font-weight: 400;
 }
 .links{
   display: flex;
   flex-direction: column;
   font-size: 14px;
+  font-weight: 300;
 }
 .links > a{
   color: white;
@@ -58,8 +65,44 @@ footer{
   width: 30px;
   margin: 0px 10px;
 }
+.link-holder, .footer-links{
+  display: flex;
+}
 svg{
   fill: #920020;
   height: 100%;
   width: 100%;
+}
+
+
+
+/* Media Queries */
+
+@media screen and ( max-width: 768px ){
+  .link-holder{
+    flex-direction: column;
+  }
+  .footer-links{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .link-box{
+    margin: 20px 0px;
+    width: 35%;
+
+  }
+}
+
+@media screen and ( max-width: 600px ){
+  .footer-links{
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-box{
+    width: 60%;
+  }
+  .copyright{
+    font-size: 10px;
+    font-weight: 100;
+  }
 }
