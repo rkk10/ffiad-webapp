@@ -19,3 +19,8 @@
 .panel-body > p{
   color: gray;
 }
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
