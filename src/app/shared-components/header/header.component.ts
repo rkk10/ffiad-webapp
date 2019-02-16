@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
-    console.log('test');
     this.onMenuToggle.emit(this.isOpen);
   }
 
