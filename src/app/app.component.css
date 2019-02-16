@@ -17,3 +17,12 @@
 .router-section{
   z-index: -1;
 }
+
+
+/* Media Quries */
+
+@media screen and ( max-width: 768px ){
+  .app-main-section{
+    padding-top: 65px;
+  }
+}

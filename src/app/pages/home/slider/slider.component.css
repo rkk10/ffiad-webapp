@@ -7,3 +7,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Media Quries */
+
+@media screen and ( max-width: 768px ){
+  .slider{
+    height: 300px;
+  }
+}

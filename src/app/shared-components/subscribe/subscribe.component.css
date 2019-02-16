@@ -34,3 +34,20 @@ h5{
   border-radius: 16px;
   padding: 0;
 } */
+
+
+/*Media Queries*/
+
+@media screen and ( max-width: 768px ){
+  input{
+    width: 60%;
+  }
+  button{
+    width: fit-content;
+    padding: 0px 10px;
+    font-size: 11px;
+  }
+  ::placeholder{
+    font-size: 12px;
+  }
+}

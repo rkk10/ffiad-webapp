@@ -90,3 +90,12 @@ li>a{
         letter-spacing: 1px;
       }
     }
+
+
+    /*Media Queries*/
+
+    @media screen and ( max-width: 768px ){
+      .head-section{
+        padding: 0px 10px;
+      }
+    }

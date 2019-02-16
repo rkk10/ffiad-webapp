@@ -71,3 +71,8 @@ a{
 }
 /* Media Queries */
 
+@media screen and ( max-width: 768px){
+  aside.aside-nav{
+    height: 100vh;
+  }
+}
