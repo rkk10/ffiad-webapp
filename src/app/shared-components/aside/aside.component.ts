@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Route } from '@angular/compiler/src/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-aside',
@@ -26,7 +28,14 @@ export class AsideComponent implements OnInit {
   isFpoOpen: Boolean = true;
 
 
-  constructor() { }
+  constructor( private router: Router ) {
+    router.events.subscribe((val) => {
+      if ( val instanceof NavigationEnd ) {
+        this.toggleMenu();
+      }
+    });
+  }
+
 
   ngOnInit() {
   }
