@@ -24,3 +24,10 @@
   background-color: #5bc0de;
   border-color: #5bc0de;
 }
+th{
+  min-width: 100px;
+  text-align: center;
+}
+td:first-child{
+  text-align: center;
+}
